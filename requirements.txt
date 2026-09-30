@@ -1,0 +1,21 @@
+# UDC Validation Framework Requirements
+
+# Core dependencies
+# (python built-ins used: sqlite3, json, argparse, pathlib, typing)
+
+# Optional: Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Optional: Code Quality
+pylint>=2.15.0
+black>=22.10.0
+
+# Optional: API Support (for Phase 2)
+# requests>=2.28.0
+# pydantic>=1.10.0
+
+# Optional: Advanced Analytics (for Phase 4)
+# pandas>=1.5.0
+# numpy>=1.23.0
+# matplotlib>=3.6.0

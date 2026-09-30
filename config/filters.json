@@ -1,0 +1,45 @@
+{
+  "filters": {
+    "udc_logs": {
+      "description": "UDC Control Manager logs",
+      "enabled": true,
+      "modules": ["SYSTEM-API"],
+      "keywords": ["udc-control*", "udc_control*"],
+      "log_levels": ["Info", "Warn", "Error", "Fatal"]
+    },
+    "udc_errors": {
+      "description": "UDC Error and Fatal logs",
+      "enabled": false,
+      "modules": ["SYSTEM-API"],
+      "keywords": ["udc*"],
+      "log_levels": ["Error", "Fatal"]
+    },
+    "audio_logs": {
+      "description": "Audio subsystem logs (for future expansion)",
+      "enabled": false,
+      "modules": ["AUDIO_A2B", "AUDIO_A2B_QUEUES", "AUDIO_I2C_UTILS"],
+      "keywords": ["audio*", "i2c*"],
+      "log_levels": ["Info", "Warn", "Error"]
+    },
+    "positioning_logs": {
+      "description": "Positioning/GNSS logs (for future expansion)",
+      "enabled": false,
+      "modules": ["POSCORE_GNSSHW", "POSITIONING-EXT"],
+      "keywords": ["gnss*", "gps*"],
+      "log_levels": ["Info", "Warn", "Error"]
+    },
+    "all_udc": {
+      "description": "All UDC-related logs (comprehensive)",
+      "enabled": false,
+      "modules": ["SYSTEM-API", "VALCOMMON"],
+      "keywords": ["udc*", "validation*"],
+      "log_levels": ["Info", "Warn", "Error", "Fatal", "Trace"]
+    }
+  },
+  "validation_rules": {
+    "require_timestamp": true,
+    "require_module": true,
+    "require_level": true,
+    "allow_missing_message": false
+  }
+}
